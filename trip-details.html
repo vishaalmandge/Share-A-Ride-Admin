@@ -103,23 +103,22 @@
 
 
                     </li>
-                    <li class="start active open">
-                        <a href="javascript:;">
+                    <li class="start">
+                        <a href="dashboard.html">
 					<i class="icon-home"></i>
 					<span class="title">Dashboard</span>
 					<span class="selected"></span>
 					<span class="arrow open"></span>
 					</a>
                     </li>
-                    <li class="start">
-                        <a href="trip-details.html">
+                    <li class="start active open">
+                        <a href="javascript:;">
 					<i class="icon-home"></i>
 					<span class="title">Trip Details</span>
 					<span class="selected"></span>
 					<span class="arrow open"></span>
 					</a>
                     </li>
-
                 </ul>
                 <!-- END SIDEBAR MENU -->
             </div>
@@ -135,83 +134,46 @@
                     <ul class="page-breadcrumb">
                         <li>
                             <i class="fa fa-home"></i>
-                            <a href="javascript:;">Home</a>
+                            <a href="dashboard.html">Home</a>
                             <i class="fa fa-angle-right"></i>
                         </li>
                         <li>
-                            <a href="javascript:;">Dashboard</a>
+                            <a href="javascript:;">Trip Details</a>
                         </li>
 
                     </ul>
 
                 </div>
-                <h3 class="page-title">
-                    Dashboard <small>reports & statistics</small>
+                <h3 class="page-title ">
+                    Trip Details
                 </h3>
                 <!-- END PAGE HEADER-->
                 <!-- BEGIN DASHBOARD STATS -->
+
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="dashboard-stat blue-madison">
-                            <div class="visual">
-                                <i class="fa fa-bar-chart-o"></i>
-                            </div>
-                            <div class="details">
-                                <div class="number">
-                                    <span id="schedule-driver"></span>
-                                </div>
-                                <div class="desc">
-                                    Scheduled Rides
-                                </div>
-                            </div>
-                            <div class="more" href="javascript:;">
-                                <h4>passengers : <span id="schedule-pass"></span></h4>
+                    <div class="portlet light clearfix">
+                        <div class="col-md-12 m-b-15">
+                            <form>
+                                <label class="control-label">View results of last<input type="text" class="daysTxt" id="tripinfo" placeholder="10" required> days</label>
+                                <button class="btn btn-primary m-l-10" id="btnsubmit">OK</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portlet light bg-inverse">
+                                sdflk
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="dashboard-stat red-intense">
-                            <div class="visual">
-                                <i class="fa fa-bar-chart-o"></i>
-                            </div>
-                            <div class="details">
-                                <div class="number">
-                                    <span id="Active-driver"></span>
-                                </div>
-                                <div class="desc">
-                                    Active Rides
-                                </div>
-                            </div>
-                            <div class="more" href="javascript:;">
-                                <h4>passengers : <span id="Active-pass"></span></h4>
+                        <div class="col-md-6">
+                            <div class="portlet light bg-inverse">
+                                sldfn
                             </div>
                         </div>
+
                     </div>
 
 
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="portlet light">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h3 class="page-title">Rides</h3>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="page-title pull-right">
-                                        <form action="">
-                                            <label class="control-label">View results of last
-                                                <input type="text" class="daysTxt" id="nodays" placeholder="10" required> 
-                                                days</label>
-                                            <button class="btn btn-primary m-l-10" id="btnok">OK</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="rides" class="chartdiv"></div>
-                        </div>
-                    </div>
-                </div>
+
                 <!-- END DASHBOARD STATS -->
 
             </div>
@@ -249,17 +211,17 @@
 
 <script>
     /*  $.ajax({
-                    asyn: true,
-                    crossDomain: true,
-                    url: "http://10.26.32.4/api/rating-service/rate/ridecount/week",
-                    dataType: 'JSON',
-                    callback: 'callback',
-                    type: 'GET',
-                    success: function(result) {
-                        var chartdata = jQuery.parseJSON(JSON.stringify(result))
-                        console.log(result)
-                    }
-                });*/
+                                                        asyn: true,
+                                                        crossDomain: true,
+                                                        url: "http://10.26.32.4/api/rating-service/rate/ridecount/week",
+                                                        dataType: 'JSON',
+                                                        callback: 'callback',
+                                                        type: 'GET',
+                                                        success: function(result) {
+                                                            var chartdata = jQuery.parseJSON(JSON.stringify(result))
+                                                            console.log(result)
+                                                        }
+                                                    });*/
 
 </script>
 <!-- END BODY -->

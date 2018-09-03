@@ -6,30 +6,6 @@
 Rounded corners reset
 ***/
 
-/* Reset rounded corners for all elements */
-
-div,
-input,
-select,
-textarea,
-span,
-img,
-table,
-label,
-td,
-th,
-p,
-a,
-button,
-ul,
-code,
-pre,
-li {
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
-}
-
 /* except below bootstrap elements */
 
 .img-circle {
@@ -22128,4 +22104,15 @@ Login page
     border: 1px solid #e5e5e5;
     height: 34px;
     padding: 6px 12px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+.m-b-15{
+    margin-bottom: 15px;
+}
+
+.error {
+    border-color: #a94442;
 }
